@@ -10,7 +10,7 @@
 
 <div class="m-4">
     <h2>Agences</h2>
-    <a href="" class="btn btn-primary mb-2">Ajouter</a>
+    <a href="/agence/ajouter" class="btn btn-primary mb-2">Ajouter</a>
     <table class="table table-hover table-bordered text-center">
         <tr>
             <th>Id</th>
@@ -26,9 +26,9 @@
             <td>{{ agence.telagence }}</td>
             <td>{{ agence.adresseville }}</td>
             <td>
-                <a href="" class="btn btn-info">Voir</a>
-                <a href="" class="btn btn-warning">Modifier</a>
-                <a href="" class="btn btn-danger">Supprimer</a>
+                <a href="/agence/consulter/{{agence.id}}" class="btn btn-info">Voir</a>
+                <a href="/agence/modifier/{{agence.id}}" class="btn btn-warning">Modifier</a>
+                <a href="/agence/supprimer/{{agence.id}}" class="btn btn-danger">Supprimer</a>
             </td>
         </td>
         {% endfor %}
@@ -55,8 +55,8 @@
             <td>{{ voiture.nbrePLace }}</td>
             <td>{{ voiture.nomAgence }}</td>
             <td>
-                <a href="" class="btn btn-warning">Modifier</a>
-                <a href="" class="btn btn-danger">Supprimer</a>
+                <a href="/voiture/modifier/{{voiture.id}}" class="btn btn-warning">Modifier</a>
+                <a href="/voiture/supprimer/{{voiture.id}}" class="btn btn-danger">Supprimer</a>
             </td>
         </td>
         {% endfor %}

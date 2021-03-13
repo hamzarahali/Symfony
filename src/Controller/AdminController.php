@@ -94,7 +94,7 @@ class AdminController extends AbstractController
     }
 
    /**
-     * @Route("/voitureagence/modifier/{id}", name="voiture-modifier")
+     * @Route("/voiture/modifier/{id}", name="voiture-modifier")
      */
     public function modifierVoiture ($id) {
         dd ('Modifier voiture', $id);
